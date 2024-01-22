@@ -9,8 +9,8 @@ import UIKit
 import Foundation
 class ViewController: UIViewController {
 
-    var leftDiceIndex = 0
-    var rightDiceIndex = 5
+    var leftDiceIndex = Int.random(in: 0..<6)
+    var rightDiceIndex = Int.random(in: 0..<6)
     let imageArray = [UIImage(named: "DiceOne"),UIImage(named: "DiceTwo"),
                      UIImage(named: "DiceThree"),UIImage(named: "DiceFour"),
                      UIImage(named: "DiceFive"),UIImage(named: "DiceSix")]
